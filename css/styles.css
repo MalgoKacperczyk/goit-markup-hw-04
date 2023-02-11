@@ -15,6 +15,7 @@
 	--logo-color: #000000;
 	--logo-second-color: #2196f3;
 	--logo-third-color: #ffffff;
+	--icon-color: #afb1b8;
 }
 body {
 	font-family: var(--main-font);
@@ -99,7 +100,9 @@ body {
 	color: var(--logo-third-color);
 }
 .hero-section {
+	max-width: 1600px;
 	background-color: var(--h1-bacground-color);
+	background-image: url(/goit-markup-hw-04/images/hero-img.jpg);
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
@@ -351,4 +354,91 @@ p {
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
+}
+.mail {
+	gap: 10px;
+	display: inline-flex;
+	align-items: center;
+}
+.tel {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+}
+.icon {
+	width: 16px;
+	height: 16px;
+	fill: var(--header-contact-color);
+}
+.icon:hover {
+	fill: var(--accent-color);
+	cursor: pointer;
+}
+.icon-our-strenghts {
+	width: 70px;
+	height: 70px;
+}
+.wrap-icon-our-strenghts {
+	display: flex;
+	background: #f5f4fa;
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	margin-bottom: 30px;
+}
+.our-clients-title {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-weight: 700px;
+	font-size: 36px;
+	line-height: 1.17;
+	margin-bottom: 50px;
+}
+.our-clients-list {
+	display: flex;
+	gap: 30px;
+}
+.our-clients-icon {
+	display: inline-flex;
+	fill: var(--icon-color);
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
+.our-clients-icon:hover {
+	border-color: var(--accent-color);
+	fill: var(--accent-color);
+	cursor: pointer;
+}
+.our-team-icon {
+	fill: var(--icon-color);
+	width: 20px;
+	height: 20px;
+}
+.our-team-icon:hover {
+	fill: var(--background-color);
+	cursor: pointer;
+}
+.our-team-icon-wrap {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.icon-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50px;
+}
+.icon-wrap:hover {
+	background-color: #2196f3;
+	fill: #ffffff;
 }
