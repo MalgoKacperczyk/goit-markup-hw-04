@@ -357,13 +357,18 @@ p {
 }
 .mail {
 	gap: 10px;
-	display: inline-flex;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 .tel {
-	display: inline-flex;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: 10px;
+}
+.tel:hover {
+	fill: #2196f3;
 }
 .icon {
 	width: 16px;
@@ -440,5 +445,18 @@ p {
 }
 .icon-wrap:hover {
 	background-color: #2196f3;
+	cursor: pointer;
 	fill: #ffffff;
+}
+.join-us {
+	color: var(--third-text-color);
+	line-height: 1.17;
+	font-weight: 700;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.footer-wrapper {
+	gap: 70px;
+	display: flex;
+	align-items: center;
 }
