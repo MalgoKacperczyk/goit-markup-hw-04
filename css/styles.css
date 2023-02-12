@@ -49,10 +49,10 @@ body {
 .menu-wrapper {
 	margin-left: 93px;
 }
-.top-contact {
+.contact-wrapper {
 	display: flex;
-	margin-left: auto;
-	gap: 50px;
+	margin-left: 345px;
+	gap: 30px;
 }
 .top-contact-item {
 	display: flex;
@@ -366,20 +366,7 @@ p {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.mail-wrapper {
-	gap: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.icon-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.icon:hover {
-	fill: var(--accent-color);
-}
+
 .icon-our-strenghts {
 	width: 70px;
 	height: 70px;
@@ -493,6 +480,12 @@ p {
 .bottom-icon-wrap:hover {
 	cursor: pointer;
 	background-color: var(--accent-color);
+}
+.mail-wrapper {
+	gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .mail-icon {
 	width: 16px;
