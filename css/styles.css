@@ -55,6 +55,10 @@ body {
 	gap: 50px;
 }
 .top-contact-item {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
 	color: var(--header-contact-color);
 	letter-spacing: 0.02em;
 	font-weight: 500;
@@ -102,7 +106,7 @@ body {
 .hero-section {
 	max-width: 1600px;
 	background-color: var(--h1-bacground-color);
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.1)),
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)),
 		url(/goit-markup-hw-04/images/hero-img.jpg);
 	padding-top: 200px;
 	padding-bottom: 200px;
@@ -304,6 +308,7 @@ footer {
 
 .list-portfolio-item:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	cursor: pointer;
 }
 .wrap-portfolio {
 	border: 1px solid #eeeeee;
@@ -311,6 +316,7 @@ footer {
 	padding: 20px 24px;
 }
 .title-portfolio {
+	color: var(--logo-color);
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -360,29 +366,19 @@ p {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.mail {
+.mail-wrapper {
 	gap: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.tel {
+.icon-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
-}
-.tel:hover {
-	fill: #2196f3;
-}
-.icon {
-	width: 16px;
-	height: 16px;
-	fill: var(--header-contact-color);
 }
 .icon:hover {
 	fill: var(--accent-color);
-	cursor: pointer;
 }
 .icon-our-strenghts {
 	width: 70px;
@@ -449,10 +445,8 @@ p {
 	border-radius: 50px;
 }
 .icon-wrap:hover {
-	color: var(--third-text-color);
-	background-color: #2196f3;
+	background-color: var(--accent-color);
 	cursor: pointer;
-	fill: #ffffff;
 }
 .join-us {
 	color: var(--third-text-color);
@@ -465,6 +459,9 @@ p {
 .footer-wrapper {
 	gap: 70px;
 	display: flex;
+}
+.footer-right {
+	justify-content: center;
 	align-items: center;
 }
 .footer-icon-wrap {
@@ -472,10 +469,11 @@ p {
 	gap: 10px;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
+}
+.social-footer {
+	fill: var(--third-text-color);
 }
 .footer-icon {
-	fill: var(--third-text-color);
 	width: 20px;
 	height: 20px;
 }
@@ -495,4 +493,20 @@ p {
 .bottom-icon-wrap:hover {
 	cursor: pointer;
 	background-color: var(--accent-color);
+}
+.mail-icon {
+	width: 16px;
+	height: 16px;
+	fill: var(--header-contact-color);
+}
+.mail-icon:hover {
+	fill: var(--accent-color);
+}
+.tel-icon {
+	width: 16px;
+	height: 16px;
+	fill: var(--header-contact-color);
+}
+.tel-icon:hover {
+	fill: var(--accent-color);
 }
