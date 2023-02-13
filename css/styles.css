@@ -105,12 +105,16 @@ body {
 }
 .hero-section {
 	max-width: 1600px;
+	height: 600px;
 	background-color: var(--h1-bacground-color);
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.5)),
 		url(/goit-markup-hw-04/images/hero-img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
+	margin: 0 auto;
 }
 .title-main-page {
 	font-size: 44px;
@@ -310,6 +314,10 @@ footer {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 	cursor: pointer;
 }
+.list-portfolio-item:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	cursor: pointer;
+}
 .wrap-portfolio {
 	border: 1px solid #eeeeee;
 	border-top: none;
@@ -373,11 +381,11 @@ p {
 }
 .wrap-icon-our-strenghts {
 	display: flex;
-	background: #f5f4fa;
+	background-color: var(--filter-button-bacground-color);
 	border-radius: 4px;
 	align-items: center;
 	justify-content: center;
-	padding: 25px;
+	height: 120px;
 	margin-bottom: 30px;
 }
 .our-clients-title {
@@ -393,34 +401,39 @@ p {
 	display: flex;
 	gap: 30px;
 }
+.our-clients-wrapper {
+	color: var(--icon-color);
+}
 .our-clients-icon {
-	display: inline-flex;
-	fill: var(--icon-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: currentColor;
 	width: 170px;
 	height: 92px;
-	border: 1px solid #afb1b8;
+	border: 1px solid currentColor;
 	border-radius: 4px;
 }
-.our-clients-icon:hover {
-	border-color: var(--accent-color);
-	fill: var(--accent-color);
-	cursor: pointer;
+.our-clients-wrapper:hover {
+	color: var(--accent-color);
+	fill: currentColor;
+}
+.our-clients-wrapper:focus {
+	color: var(--accent-color);
+	fill: currentColor;
 }
 .our-team-icon {
-	fill: var(--icon-color);
+	fill: currentColor;
 	width: 20px;
 	height: 20px;
 }
-.our-team-icon:hover {
-	fill: var(--background-color);
-	cursor: pointer;
-}
+
 .our-team-icon-wrap {
 	display: flex;
 	gap: 10px;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-top: 16px;
 }
 
 .icon-wrap {
@@ -430,10 +443,15 @@ p {
 	width: 44px;
 	height: 44px;
 	border-radius: 50px;
+	color: var(--icon-color);
 }
 .icon-wrap:hover {
 	background-color: var(--accent-color);
-	cursor: pointer;
+	color: var(--third-text-color);
+}
+.icon-wrap:focus {
+	background-color: var(--accent-color);
+	color: var(--third-text-color);
 }
 .join-us {
 	color: var(--third-text-color);
@@ -466,7 +484,9 @@ p {
 }
 .footer-icon:hover {
 	fill: var(--background-color);
-	cursor: pointer;
+}
+.footer-icon:focus {
+	fill: var(--background-color);
 }
 .bottom-icon-wrap {
 	background-color: rgba(255, 255, 255, 0.1);
@@ -481,6 +501,10 @@ p {
 	cursor: pointer;
 	background-color: var(--accent-color);
 }
+.bottom-icon-wrap:focus {
+	cursor: pointer;
+	background-color: var(--accent-color);
+}
 .mail-wrapper {
 	gap: 10px;
 	display: flex;
@@ -490,16 +514,22 @@ p {
 .mail-icon {
 	width: 16px;
 	height: 16px;
-	fill: var(--header-contact-color);
+	fill: currentColor;
 }
 .mail-icon:hover {
+	fill: var(--accent-color);
+}
+.mail-icon:focus {
 	fill: var(--accent-color);
 }
 .tel-icon {
 	width: 16px;
 	height: 16px;
-	fill: var(--header-contact-color);
+	fill: currentColor;
 }
 .tel-icon:hover {
+	fill: var(--accent-color);
+}
+.tel-icon:focus {
 	fill: var(--accent-color);
 }
