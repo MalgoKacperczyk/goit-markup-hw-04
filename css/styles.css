@@ -310,14 +310,16 @@ footer {
 	gap: 30px;
 }
 
-.list-portfolio-item:hover {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-	cursor: pointer;
+.portfolio-link {
+	display: block;
 }
-.list-portfolio-item:focus {
+.portfolio-link:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-	cursor: pointer;
 }
+.portfolio-link:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .wrap-portfolio {
 	border: 1px solid #eeeeee;
 	border-top: none;
@@ -403,24 +405,24 @@ p {
 }
 .our-clients-wrapper {
 	color: var(--icon-color);
-}
-.our-clients-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	fill: currentColor;
 	width: 170px;
 	height: 92px;
 	border: 1px solid currentColor;
 	border-radius: 4px;
 }
+.our-clients-icon {
+	width: 106px;
+	height: 60px;
+	fill: currentColor;
+}
 .our-clients-wrapper:hover {
 	color: var(--accent-color);
-	fill: currentColor;
 }
 .our-clients-wrapper:focus {
 	color: var(--accent-color);
-	fill: currentColor;
 }
 .our-team-icon {
 	fill: currentColor;
@@ -464,32 +466,15 @@ p {
 .footer-wrapper {
 	gap: 70px;
 	display: flex;
+	align-items: baseline;
 }
 .footer-right {
 	justify-content: center;
 	align-items: center;
 }
-.footer-icon-wrap {
-	display: flex;
-	gap: 10px;
-	justify-content: center;
-	align-items: center;
-}
 .social-footer {
-	fill: var(--third-text-color);
-}
-.footer-icon {
-	width: 20px;
-	height: 20px;
-}
-.footer-icon:hover {
-	fill: var(--background-color);
-}
-.footer-icon:focus {
-	fill: var(--background-color);
-}
-.bottom-icon-wrap {
 	background-color: rgba(255, 255, 255, 0.1);
+	gap: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -497,13 +482,26 @@ p {
 	height: 44px;
 	border-radius: 50px;
 }
-.bottom-icon-wrap:hover {
-	cursor: pointer;
+.social-footer:hover {
 	background-color: var(--accent-color);
 }
-.bottom-icon-wrap:focus {
-	cursor: pointer;
+.social-footer:focus {
 	background-color: var(--accent-color);
+}
+
+.footer-icon-wrap {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-icon {
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	fill: var(--third-text-color);
 }
 .mail-wrapper {
 	gap: 10px;
